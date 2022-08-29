@@ -956,7 +956,24 @@
     background: #F1F6FB;
     padding: 64px 0;
     margin: 0 0 100px 0;
+}
+
+.reviews:not(.reviews__list) {
     overflow-x: hidden;
+}
+
+.reviews.reviews__list .container.reviews__btn {
+    padding: 0 !important;
+}
+
+.reviews__btn .btn {
+    height: 62px;
+    background: #F1F6FB;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #494462;
 }
 
 .reviews__control {
@@ -3207,7 +3224,7 @@ input[type="search"] {
     flex-direction: column;
     flex-wrap: wrap;
     gap: 15px;
-    height: 629px;
+    max-height: 629px;
 }
 
 .gallery__wrapper li a {
