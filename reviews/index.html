@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Горклиника</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/adaptive.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a href="/" class="header__logo"><img src="/assets/image/logo.svg"></a>
+                <div class="header__location">
+                    <a href="/contacts/">ул.Перовская, д.23</a>
+                    <a href="/contacts/">Симферопольский б-р, д.10 к.1</a>
+                </div>
+                <a class="header__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                <button class="header__lk"><span>Личный кабинет</span></button>
+                <button class="header__record btn btn_fill_green"><span>Онлайн-запись</span></button>
+                <div class="header__buttons_mobile">
+                    <button><img src="/assets/image/record_mobile.svg"></button>
+                    <button><img src="/assets/image/lk_mobile.svg"></button>
+                    <button class="js-open-menu"><img src="/assets/image/burger.svg"></button>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/branch/">О филиалах</a></li>
+                    <li>
+                        <a href="/services/">Услуги</a>
+                        <div class="header__submenu">
+                            <div class="filter__item">
+                                <input type="search" placeholder="Введите название услуги">
+                            </div>
+                            <ul>
+                                <li class="header__submenu__services-section">
+                                    <a>Поликлиническое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Акушерство</a></li>
+                                            <li><a>Андрология</a></li>
+                                            <li><a>Венерология</a></li>
+                                            <li><a>Вызов врача на дом</a></li>
+                                            <li><a>Гастроэнтерология</a></li>
+                                            <li><a>Гериатрия</a></li>
+                                            <li><a>Гинекология</a></li>
+                                            <li><a>Гирудотерапия</a></li>
+                                            <li><a>Дерматология</a></li>
+                                            <li><a>Кардиология</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Косметология</a></li>
+                                            <li><a>Маммология</a></li>
+                                            <li><a>Мануальная терапия</a></li>
+                                            <li><a>Медицинские справки</a></li>
+                                            <li><a>Наркология</a></li>
+                                            <li><a>Неврология</a></li>
+                                            <li><a>Нутрициология</a></li>
+                                            <li><a>Общая терапия</a></li>
+                                            <li><a>Онкология</a></li>
+                                            <li><a>Остеопатия</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Оториноларингология (ЛОР)</a></li>
+                                            <li><a>Психиатрия</a></li>
+                                            <li><a>Проктология</a></li>
+                                            <li><a>Репродуктология</a></li>
+                                            <li><a>Семейный врач</a></li>
+                                            <li><a>Урология</a></li>
+                                            <li><a>Флебология</a></li>
+                                            <li><a>Хирургия</a></li>
+                                            <li><a>Эндокринология</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a href="/services/dent/">Стоматологическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Гигиена</a></li>
+                                            <li><a href="/services/dent/implant.html">Имплантология</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Ортодонтия</a></li>
+                                            <li><a>Ортопедия</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Терапия</a></li>
+                                            <li><a>Хирургическая стоматология</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Наркологическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Вывод из запоя</a></li>
+                                            <li><a>Выезд нарколога на дом</a></li>
+                                            <li><a>Детокс-капельницы</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Детоксинация</a></li>
+                                            <li><a>Капельница на дому</a></li>
+                                            <li><a>Кодирование</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Консультация врача-нарколога</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Диагностическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Анализы</a></li>
+                                            <li><a>Гастроскопия</a></li>
+                                            <li><a>Забор анализов на дому</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>КТ</a></li>
+                                            <li><a>МРТ</a></li>
+                                            <li><a>Тест на COVID-19</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>УЗИ</a></li>
+                                            <li><a>Функциональная диагностика</a></li>
+                                            <li><a>ЭКГ</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Процедурный кабинет</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Склеротерапия</a></li>
+                                            <li><a>ВЛОК</a></li>
+                                            <li><a>Капельница Antistress</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Капельница Detox</a></li>
+                                            <li><a>Капельница Immyniti</a></li>
+                                            <li><a>Лечебные блокады</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Лечебный массаж</a></li>
+                                            <li><a>Реабилитация после COVID-19</a></li>
+                                            <li><a>ТЭС-терапия (Трансаир)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/experts/">Специалисты</a></li>
+                    <li><a href="/share/">Акции</a></li>
+                    <li><a href="/articles/">Статьи</a></li>
+                    <li><a href="/news/">Новости</a></li>
+                    <li><a href="/reviews/">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a class="active" href="/reviews/">Отзывы</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h1 class="title page-title">Отзывы</h1>
+            </div>
+        </section>
+        <section class="filter">
+            <div class="container">
+                <div class="filter__row filter__row_col2">
+                    <div class="filter__col">
+                        <div class="filter__item">
+                            <div class="filter__item__name">Найти врача</div>
+                            <input type="search" placeholder="Введите ФИО врача">
+                        </div>
+                    </div>
+                    <div class="filter__col">
+                        <div class="filter__item">
+                            <div class="filter__item__name">Выберите клинику</div>
+                            <select>
+                                <option selected>Все клиники</option>
+                                <option value="perovo">Клиника в Перово</option>
+                                <option value="zyzyno">Клиника в Зюзино</option>
+                            </select>
+                            <div class="custom-select js-select">
+                                <div class="custom-select__total js-select-total">Все клиники</div>
+                                <ul>
+                                    <li class="selected" data-value="all">Все клиники</li>
+                                    <li data-value="perovo">Клиника в Перово</li>
+                                    <li data-value="zyzyno">Клиника в Зюзино</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- НЕ слайдер - другой адаптив -->
+        <section class="reviews reviews_no-bg no-pt no-pb">
+            <div class="container">
+                <div class="reviews__wrapper">
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">11.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p>Была на приеме у доктора Рябчиковой И.И. Качественный осмотр, вежливая, теплое отношение. Благодарю доктора за внимательное отношение.И благодарю администраторов Елену и Марину за вежливое обращение ко мне. Всех им благ.</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews1.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Рябчикова И.И.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out1.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">16.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Я – пациент Макеева Виктория Александровна, выражаю благодарность стоматологу, доктору Матвееву Ивану Валерьевичу за лечение и профессионализм! А также, девушкам администраторам Елене и Анаре за приветливость и удобство записи!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews2.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a href="/experts/matveev.html" class="reviews__name">Матвеев И.В.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out2.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">24.12.2021</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Был на приеме у доктора Филиппова О.С. Заметны широкие знания в необходимых областях. Качественный осмотр, заботливое и тактичное отношение. Благодарен врачу и ГС-клинике за внимательность и вежливость. Отдельное спасибо администраторам!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews3.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Филиппов О.С.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out3.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">11.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p>Была на приеме у доктора Рябчиковой И.И. Качественный осмотр, вежливая, теплое отношение. Благодарю доктора за внимательное отношение.И благодарю администраторов Елену и Марину за вежливое обращение ко мне. Всех им благ.</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews1.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Рябчикова И.И.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out1.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">16.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Я – пациент Макеева Виктория Александровна, выражаю благодарность стоматологу, доктору Матвееву Ивану Валерьевичу за лечение и профессионализм! А также, девушкам администраторам Елене и Анаре за приветливость и удобство записи!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews2.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a href="/experts/matveev.html" class="reviews__name">Матвеев И.В.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out2.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">24.12.2021</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Был на приеме у доктора Филиппова О.С. Заметны широкие знания в необходимых областях. Качественный осмотр, заботливое и тактичное отношение. Благодарен врачу и ГС-клинике за внимательность и вежливость. Отдельное спасибо администраторам!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews3.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Филиппов О.С.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out3.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">11.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p>Была на приеме у доктора Рябчиковой И.И. Качественный осмотр, вежливая, теплое отношение. Благодарю доктора за внимательное отношение.И благодарю администраторов Елену и Марину за вежливое обращение ко мне. Всех им благ.</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews1.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Рябчикова И.И.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out1.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">16.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Я – пациент Макеева Виктория Александровна, выражаю благодарность стоматологу, доктору Матвееву Ивану Валерьевичу за лечение и профессионализм! А также, девушкам администраторам Елене и Анаре за приветливость и удобство записи!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews2.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a href="/experts/matveev.html" class="reviews__name">Матвеев И.В.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out2.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">24.12.2021</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Был на приеме у доктора Филиппова О.С. Заметны широкие знания в необходимых областях. Качественный осмотр, заботливое и тактичное отношение. Благодарен врачу и ГС-клинике за внимательность и вежливость. Отдельное спасибо администраторам!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews3.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Филиппов О.С.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out3.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">11.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <p>Была на приеме у доктора Рябчиковой И.И. Качественный осмотр, вежливая, теплое отношение. Благодарю доктора за внимательное отношение.И благодарю администраторов Елену и Марину за вежливое обращение ко мне. Всех им благ.</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews1.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Рябчикова И.И.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out1.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">16.01.2022</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Я – пациент Макеева Виктория Александровна, выражаю благодарность стоматологу, доктору Матвееву Ивану Валерьевичу за лечение и профессионализм! А также, девушкам администраторам Елене и Анаре за приветливость и удобство записи!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews2.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a href="/experts/matveev.html" class="reviews__name">Матвеев И.В.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out2.png">
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div>
+                            <div class="reviews__row">
+                                <div class="reviews__date">24.12.2021</div>
+                                <div class="reviews__stars">
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                    <span class="review__star_fill"></span>
+                                </div>
+                            </div>
+                            <p>Был на приеме у доктора Филиппова О.С. Заметны широкие знания в необходимых областях. Качественный осмотр, заботливое и тактичное отношение. Благодарен врачу и ГС-клинике за внимательность и вежливость. Отдельное спасибо администраторам!</p>
+                        </div>
+                        <div class="reviews__row">
+                            <img class="reviews__face" src="/assets/image/reviews/reviews3.png">
+                            <div class="reviews__bottom-wrap">
+                                <div class="reviews__place">Лечащий врач</div>
+                                <a class="reviews__name">Филиппов О.С.</a>
+                            </div>
+                            <img class="reviews__src" src="/assets/image/reviews/reviews-out3.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-review">
+            <div class="container">
+                <div class="form-review__col">
+                    <div class="title form-review__title">Хотите оставить отзыв о клинике?</div>
+                    <img class="form-review__picture" src="/assets/image/form-review.png">
+                </div>
+                <form id="expert-review-form" class="form-review__col form-review__form">
+                    <div class="form-review__subtitle">Оставить отзыв о клинике</div>
+                    <fieldset>
+                        <input type="text" placeholder="Введите ваше имя">
+                    </fieldset>
+                    <fieldset>
+                        <input type="mail" placeholder="Введите ваш E-mail">
+                    </fieldset>
+                    <fieldset>
+                        <textarea placeholder="Введите текст вашего отзыва"></textarea>
+                    </fieldset>
+                    <input class="btn btn_fill_blue" type="submit" value="Оставить отзыв">
+                </form>
+            </div>
+        </section>
+        <section class="spec-sl">
+            <div class="container">
+                <div class="title spec-sl__title">Наши специалисты <a href="/experts/">Посмотреть всех специалистов</a></div>
+            </div>
+            <div id="spec-slider" class="spec-sl__slider owl-carousel owl-theme">
+                <div class="spec-sl__item">
+                    <a href="/experts/matveev.html" class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec1.jpg">
+                    </a>
+                    <a href="/experts/matveev.html" class="spec-sl__name">Матвеев Иван Валерьевич</a>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec2.jpg">
+                    </div>
+                    <div class="spec-sl__name">Яковлева Ирина Владимировна</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Гарстроэнтеролог</div>
+                        <div class="spec-sl__dir">Кардиолог</div>
+                        <div class="spec-sl__dir">Невролог</div>
+                        <div class="spec-sl__dir">Семейный врач</div>
+                        <div class="spec-sl__dir">Терапевт</div>
+                        <div class="spec-sl__dir">Узи-специалист</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec3.jpg">
+                        <span class="spec-sl__label">Скидка на прием -50%</span>
+                    </div>
+                    <div class="spec-sl__name">Якимов Владислав Олегович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Оториноларинголог</div>
+                        <div class="spec-sl__dir">Отоневролог</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec4.jpg">
+                    </div>
+                    <div class="spec-sl__name">Якубовский Сергей Леонидович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec5.jpg">
+                    </div>
+                    <div class="spec-sl__name">Карпунина Роза Юрьевна</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Остеопат</div>
+                        <div class="spec-sl__dir">Невролог</div>
+                    </div>
+                </div>
+
+                <div class="spec-sl__item spec-sl__item_mobile-handler"></div>
+                <div class="spec-sl__item spec-sl__item_mobile-handler"></div>
+            </div>
+            <div class="container">
+                <div class="spec-sl__control">
+                    <div class="spec-sl__nav default-slider-nav"></div>
+                    <div class="spec-sl__dots"></div>
+                </div>
+            </div>
+        </section>
+        <section class="offers">
+            <div class="container">
+                <div class="title offers__title">Специальные предложения</div>
+                <div class="offers__wrapper">
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer1.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer1.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer1-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer1-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer1-450.png">
+                        <div class="offer__title">Годовое<br> прикрепление</div>
+                        <div class="offer__subtitle">Полное медицинское<br> обслуживание</div>
+                        <a href="/attach/" class="offer__btn">Купить безлимит</a>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer2.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer2.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer2-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer2-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer2-450.png">
+                        <div class="offer__title">Процедурный<br> кабинет</div>
+                        <div class="offer__subtitle">Капельницы, уколы и другие<br> услуги в нашей клинике</div>
+                        <button class="offer__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer3.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer3.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer3-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer3-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer3-450.png">
+                        <div class="offer__title">Диагностика</div>
+                        <div class="offer__subtitle">МРТ, КТ, УЗИ,<br> ЭХОКГ, анализы</div>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer4.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer4.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer4-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer4-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer4-450.png">
+                        <div class="offer__title">Подарочные<br> сертификаты</div>
+                        <div class="offer__subtitle">Получите сертификат<br> на топовые услуг при<br> оформлении годового<br> прикрепления</div>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer5.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer5-1024.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer5-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer5-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer5-450.png">
+                        <div class="offer__title">Медкарта</div>
+                        <div class="offer__subtitle">Единое пространство<br> для медицинских<br> данных</div>
+                        <button class="offer__btn offer__btn_beige">Войти в личный кабинет</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="attach">
+            <div class="container">
+                <div class="attach__container">
+                    <div class="attach__title title">Годовое прикрепление</div>
+                    <div class="attach__subtitle">Полное медицинское обслуживание в нашей<br> клинике на целый год</div>
+                    <div class="attach__price">15 000 рублей</div>
+                    <div class="attach__buttons">
+                        <button class="btn btn_fill_green js-open-form">Купить безлимит</button>
+                        <a href="/attach/" class="btn btn_green btn_bg_t">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="modal">
+        <div id="success" class="success">
+            <img src="/assets/image/success.svg">
+            <div class="success__title">Ваша заявка успешно отправлена, мы свяжемся с вами в ближайшее время!</div>
+            <button class="success__back js-close-modal">Вернуться на сайт</button>
+        </div>
+        <form id="modal-form" class="form">
+            <button class="form__close js-close-modal"></button>
+            <div class="form__title">Хотите оформить годовое прикрепление в ГорКлинике?</div>
+            <div class="form__subtitle">Мы постараемся ответить в течение дня</div>
+            <fieldset>
+                <input type="text" placeholder="Ваше имя *">
+            </fieldset>
+            <fieldset>
+                <input type="mail" placeholder="Ваш E-mail">
+            </fieldset>
+            <fieldset>
+                <input maxlength="18" type="tel" placeholder="+ 7 (___) ___-__-__ *">
+            </fieldset>
+            <div class="form__policy">Нажимая на кнопку Оставить заявку, я соглашаюсь с условиями Политики обработки персональных данных</div>
+            <input class="btn btn_fill_blue" type="submit" value="Оставить заявку">
+        </form>
+    </div>
+
+    <div id="mobile-menu" class="menu">
+        <button class="menu__close js-close-menu"><img src="/assets/image/close2.svg"></button>
+        <div class="menu__logo"><img src="/assets/image/logo.svg"></div>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/branch/">О филиалах</a></li>
+                <li><a href="/services/">Услуги</a></li>
+                <li><a href="/experts/">Специалисты</a></li>
+                <li><a href="/share/">Акции</a></li>
+                <li><a href="/articles/">Статьи</a></li>
+                <li><a href="/news/">Новости</a></li>
+                <li><a href="/reviews/">Отзывы</a></li>
+            </ul>
+        </nav>
+        <a class="menu__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+        <div class="menu__location">
+            <h2>Адреса</h2>
+            <a href="/contacts/">Клиника в Перово: г.Москва, ул. Перовская, д. 23 (м. Перово)</a>
+            <a href="/contacts/">Клиника в Зюзино: г.Москва, Симферопольский б-р, д.10 к.1</a>
+        </div>
+        <button class="btn btn_fill_white btn_br-50 menu__lk">Войти в Личный кабинет</button>
+        <button class="btn btn_fill_green menu__record">Онлайн-запись</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div>
+                        <a href="/" class="footer__logo">
+                            <img src="/assets/image/logo.svg">
+                        </a>
+                        <img class="footer__rating" src="/assets/image/rating.png">
+                    </div>
+                    <div>
+                        <div class="footer__info">Общество с ограниченной ответственностью «Городская Семейная Клиника» лицензия № ЛО-77-01-017171 от 11 декабря 2018 г. ИНН 7720691259</div>
+                        <div class="footer__social">
+                            <a href="https://vk.com/gorclinica_zuzino" target="_blank"><img src="/assets/image/social/vk.svg"></a>
+                            <a href="https://zen.yandex.ru/id/62b46299f985852025fe7723" target="_blank"><img src="/assets/image/social/tg.svg"></a>
+                            <a href="https://t.me/gorklinika_v_zuzino" target="_blank"><img src="/assets/image/social/dzen.svg"></a>
+                        </div>
+                    </div>
+                    <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="/branch/">О филиалах</a></li>
+                            <li><a href="/services/">Услуги</a></li>
+                            <li><a href="/experts/">Специалисты</a></li>
+                            <li><a href="/share/">Акции</a></li>
+                            <li><a href="/articles/">Статьи</a></li>
+                            <li><a href="/news/">Новости</a></li>
+                            <li><a href="/reviews/">Отзывы</a></li>
+                            <li><a href="/vacancies/">Вакансии</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="/attach/" class="btn btn_fill_grey footer__gp">Годовое прикрепление</a>
+                    <button class="btn btn_fill_grey footer__lk">Личный кабинет</button>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="/licenses/">Лицензии</a></li>
+                            <li><a>Справочник</a></li>
+                            <li><a>Контролирующие органы</a></li>
+                            <li><a href="/regulatory-acts/">Нормативные акты</a></li>
+                            <li><a>Сведения об учредителях</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
+                            <li><a>Обработка персональных данных</a></li>
+                        </ul>
+                    </nav>
+                    <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                    <a href="/attach/" class="btn btn_fill_grey footer__gp">Годовое прикрепление</a>
+                    <button class="btn btn_fill_grey footer__lk">Личный кабинет</button>
+                </div>
+                <div class="footer__col footer__contacts">
+                    <div>
+                        <div class="footer__bottom_info">Обращаем Ваше внимание, что стоимость визита к врачу не всегда совпадает с указанной ценой приёма. Окончательная стоимость приема может включать стоимость дополнительных услуг. Необходимость оказания услуг определяется врачом в зависимости от медицинских показаний непосредственно во время приёма.</div>
+                        <div class="footer__contacts__title">Контакты</div>
+                        <div class="footer__contacts__wrapper">
+                            <a class="footer__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                            <a class="footer__mail" href="mailto:info@perovo.clinic">info@perovo.clinic</a>
+                            <a class="footer__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                            <a class="footer__mail" href="mailto:info@gorclinica-zuzino.ru">info@gorclinica-zuzino.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts__address">
+                        <div class="footer__contacts__title">Адреса</div>
+                        <a href="/contacts/" class="footer__location">Клиника в Перово: г.Москва, ул. Перовская, д. 23 (м. Перово)</a>
+                        <a href="/contacts/" class="footer__location">Клиника в Зюзино: г.Москва, Симферопольский б-р, д.10 к.1</a>
+                        <div class="footer__location">Центр томографии: г. Москва, 1-й проезд Перова поля, д. 9, стр.1</div>
+                        <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row footer__bottom">
+                <div class="footer__bottom_info">Обращаем Ваше внимание, что стоимость визита к врачу не всегда совпадает с указанной ценой приёма. Окончательная стоимость приема может включать стоимость дополнительных услуг. Необходимость оказания услуг определяется врачом в зависимости от медицинских показаний непосредственно во время приёма.</div>
+                <div class="footer__bottom_subinfo">Материалы, размещенные на данной странице, носят информационный характер и предназначены для образовательных целей. Посетители сайта не должны использовать их в качестве медицинских рекомендаций. Определение диагноза и выбор методики лечения остается исключительной прерогативой вашего лечащего врача! Мы не несём ответственности за возможные негативные последствия, возникшие в результате использования информации, размещенной на сайте perovo.clinic.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/lib/owl/owl.carousel.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/lib/showmore/readmore.min.js"></script>
+    <script src="/assets/lib/mask/index.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>

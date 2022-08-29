@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Горклиника</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/lib/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/adaptive.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a href="/" class="header__logo"><img src="/assets/image/logo.svg"></a>
+                <div class="header__location">
+                    <a href="/contacts/">ул.Перовская, д.23</a>
+                    <a href="/contacts/">Симферопольский б-р, д.10 к.1</a>
+                </div>
+                <a class="header__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                <button class="header__lk"><span>Личный кабинет</span></button>
+                <button class="header__record btn btn_fill_green"><span>Онлайн-запись</span></button>
+                <div class="header__buttons_mobile">
+                    <button><img src="/assets/image/record_mobile.svg"></button>
+                    <button><img src="/assets/image/lk_mobile.svg"></button>
+                    <button class="js-open-menu"><img src="/assets/image/burger.svg"></button>
+                </div>
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/branch/">О филиалах</a></li>
+                    <li>
+                        <a href="/services/">Услуги</a>
+                        <div class="header__submenu">
+                            <div class="filter__item">
+                                <input type="search" placeholder="Введите название услуги">
+                            </div>
+                            <ul>
+                                <li class="header__submenu__services-section">
+                                    <a>Поликлиническое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Акушерство</a></li>
+                                            <li><a>Андрология</a></li>
+                                            <li><a>Венерология</a></li>
+                                            <li><a>Вызов врача на дом</a></li>
+                                            <li><a>Гастроэнтерология</a></li>
+                                            <li><a>Гериатрия</a></li>
+                                            <li><a>Гинекология</a></li>
+                                            <li><a>Гирудотерапия</a></li>
+                                            <li><a>Дерматология</a></li>
+                                            <li><a>Кардиология</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Косметология</a></li>
+                                            <li><a>Маммология</a></li>
+                                            <li><a>Мануальная терапия</a></li>
+                                            <li><a>Медицинские справки</a></li>
+                                            <li><a>Наркология</a></li>
+                                            <li><a>Неврология</a></li>
+                                            <li><a>Нутрициология</a></li>
+                                            <li><a>Общая терапия</a></li>
+                                            <li><a>Онкология</a></li>
+                                            <li><a>Остеопатия</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Оториноларингология (ЛОР)</a></li>
+                                            <li><a>Психиатрия</a></li>
+                                            <li><a>Проктология</a></li>
+                                            <li><a>Репродуктология</a></li>
+                                            <li><a>Семейный врач</a></li>
+                                            <li><a>Урология</a></li>
+                                            <li><a>Флебология</a></li>
+                                            <li><a>Хирургия</a></li>
+                                            <li><a>Эндокринология</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a href="/services/dent/">Стоматологическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Гигиена</a></li>
+                                            <li><a href="/services/dent/implant.html">Имплантология</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Ортодонтия</a></li>
+                                            <li><a>Ортопедия</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Терапия</a></li>
+                                            <li><a>Хирургическая стоматология</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Наркологическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Вывод из запоя</a></li>
+                                            <li><a>Выезд нарколога на дом</a></li>
+                                            <li><a>Детокс-капельницы</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Детоксинация</a></li>
+                                            <li><a>Капельница на дому</a></li>
+                                            <li><a>Кодирование</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Консультация врача-нарколога</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Диагностическое отделение</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Анализы</a></li>
+                                            <li><a>Гастроскопия</a></li>
+                                            <li><a>Забор анализов на дому</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>КТ</a></li>
+                                            <li><a>МРТ</a></li>
+                                            <li><a>Тест на COVID-19</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>УЗИ</a></li>
+                                            <li><a>Функциональная диагностика</a></li>
+                                            <li><a>ЭКГ</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header__submenu__services-section">
+                                    <a>Процедурный кабинет</a>
+                                    <div class="header__submenu__wrapper">
+                                        <ul>
+                                            <li><a>Склеротерапия</a></li>
+                                            <li><a>ВЛОК</a></li>
+                                            <li><a>Капельница Antistress</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Капельница Detox</a></li>
+                                            <li><a>Капельница Immyniti</a></li>
+                                            <li><a>Лечебные блокады</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a>Лечебный массаж</a></li>
+                                            <li><a>Реабилитация после COVID-19</a></li>
+                                            <li><a>ТЭС-терапия (Трансаир)</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="/experts/">Специалисты</a></li>
+                    <li><a href="/share/">Акции</a></li>
+                    <li><a href="/articles/">Статьи</a></li>
+                    <li><a href="/news/">Новости</a></li>
+                    <li><a href="/reviews/">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/article/">Статьи</a></li>
+                    <li><a class="active" href="/article/detail.html">Почему крошатся зубы?</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="article-detail">
+            <div class="container">
+                <article>
+                    <div class="article-detail__params">
+                        <div class="article-detail__date">20 июня 2022</div>
+                        <div class="article-detail__views">Просмотров: 0,7 k</div>
+                        <div class="article-detail__time-read">Время чтения: 10 минут</div>
+                    </div>
+                    <h1 class="title article-detail__title">Почему крошатся зубы?</h1>
+                    <div class="article-detail__author">
+                        <img class="article-detail__author__picture" src="/assets/image/spec/spec1_white.jpg">
+                        <div class="article-detail__author__wrapper">
+                            <div class="article-detail__author__title">Автор статьи</div>
+                            <a href="/experts/matveev.html" class="article-detail__author__name">Матвеев Иван Валерьевич</a>
+                            <div class="article-detail__author__dirs">Стоматолог, стоматолог-ортопед, стоматолог-терапевт</div>
+                        </div>
+                    </div>
+                    <h3>Разрушение зубов – это не просто эстетический дефект, это сигнал к обследованию, исключению некоторых заболеваний. Разберем, почему крошатся зубы у взрослого и у ребенка, как с этим бороться, и можно ли остановить.</h3>
+                    <h2 id="anchor1">Причины, по которым крошатся зубы у взрослого человека</h2>
+                    <img class="article-detail__picture" src="/assets/image/news-detail.png">
+                    <p>В зоне риска по разрушению зубов находятся беременные, женщины в периоде климакса, люди пожилого возраста, дети и взрослые с дефицитным питанием. На минерализацию зубов, влияет много факторов, внутренних и внешних. Сбой на любом этапе формирования кристаллической решетки кости может привести к ее разрушению:</p>
+                    <ul class="article-detail__list">
+                        <li>Дефицит витаминов и микроэлементов в организме. Имеет значение недостаток кальция, фосфора, витамина Д. Этот фактор связан с нерациональным питанием либо с эндемичным районом проживания (с неадекватным содержанием минералов в почве и воде).</li>
+                        <li>Нарушение обменных процессов. При некоторых заболеваниях ЖКТ, эндокринной системы нарушается всасывание питательных веществ, тогда при нормальном поступлении минералов все равно формируется дефицит.</li>
+                        <li>Гормональные дисфункции. Зачастую страдают от хрупкости зубов женщины в менопаузе. У них снижается уровень женских гормонов, которые отвечают, в том числе, и за плотность костей.</li>
+                        <li>Нарушение гигиены ротовой полости. Постоянный налет способствует размножению бактерий и формированию кариеса. Он, как известно, провоцирует разрушение ткани зуба.</li>
+                        <li>Аномалии прикуса. Нарушение смыкания челюсти влечет за собой постоянное травмирование зубов, эмаль истощается и крошится.</li>
+                        <li>Нездоровый образ жизни. Вредны для зубов табакокурение, злоупотребление алкоголем, кофе. Также пагубны для зубов привычка грызть ногти и семечки, снимать зубами крышки.</li>
+                    </ul>
+                    <h2 id="anchor2">Причины, по которым крошатся зубы у детей</h2>
+                    <p>За последние десятилетия родители все чаще сталкиваются с проблемой разрушения молочных зубов у детей. Участилась обращаемость к детским стоматологам по поводу того, что крошатся передние молочные зубы. Причин этому несколько.</p>
+                    <p>Здоровье детских зубов начинается со здоровья матери, ведь их зачатки формируются еще внутриутробно. К неблагоприятным гестационным факторам относят: вредные привычки беременной, дефицит витаминов и минералов в питании, тяжелый токсикоз, инфекции, анемия, хронические стрессы. В результате нарушается минерализация эмали, после прорезывания зубов она быстро портится: появляются темные пятна, борозды и углубления. Называется это гипоплазия эмали.</p>
+                    <p>Вторая важная причина разрушения молочных зубов – это питание самого ребенка. Если в нем недостаточно витамина Д, кальция, фтора, магния, фосфора, то крепкая изначально костная ткань будет истощать свои запасы. Если ребенок находится на грудном вскармливании, то важна и полноценная диета кормящей женщины.</p>
+                    <p>Избыток минеральных солей тоже негативно влияет на эмаль. Примером тому флюороз — заболевание зубов, связанное с передозировкой фтора в организме. Основной источник фтора — вода. Флюороз распространен в регионах с избытком минерала в водоемах. Эмаль при этом заболевании становится настолько плотной, что теряет эластичность и буквально отваливается пластами.</p>
+                    <p>Конечно, немаловажную роль играет гигиена ротовой полости у малышей. Мягкий налет — это лучшая почва для размножения бактерий, что приводит к кариесу. Кариозные зубы теряют прочность, даже при качественном пломбировании склонны к разрушению.</p>
+                    <p>Нарушение прикуса, речь о котором шла выше, также актуальная причина разрушения молочных зубов. Деформируется прикус из-за неправильного прорезывания первых зубов, длительного использования пустышки, ранней потери зубов.</p>
+                    <div class="article-detail__capture">
+                        <span>Мучает острая боль?</span>
+                        <button class="btn btn_fill_green btn_br-10">Записаться на прием</button>
+                    </div>
+                    <h2 id="anchor3">Диагностические мероприятия</h2>
+                    <p>При правильном лечении мало устранить только эстетический дефект. Для стоматолога важно ответить на вопрос, почему же у человека крошатся зубы, чтоб воздействовать на патологический процесс в целом. А, значит, диагностика должна быть комплексной.</p>
+                    <h3>Алгоритм обследования пациента</h3>
+                    <ul class="article-detail__steps">
+                        <li>стоматологический осмотр, сбор анамнеза (истории) заболевания. Для детей сбор еще и материнского анамнеза;</li>
+                        <li>консультации профильных специалистов по показаниям: гинеколог, эндокринолог, педиатр, терапевт.</li>
+                        <li>Анализы крови для выявления электролитных нарушений, анемии, гормональных расстройств.</li>
+                    </ul>
+                    <p>Если в ходе обследования выявляется системное заболевание, то сочетанная работа стоматолога и «узкого» специалиста значительно улучшает шансы на восстановление и сохранение зубов. Поэтому, чтобы выяснить, почему крошатся зубы, доктора проводят различные тесты: рентгенография, УЗИ, анализы, важность которых нельзя умалять.</p>
+                    <h2>В ГорКлинике проходят акции на услуги стоматолога</h2>
+                    <div class="share__wrapper article-detail__share">
+                        <a class="share__item"><img src="/assets/image/share/active/share1.png"></a>
+                        <a class="share__item"><img src="/assets/image/share/active/share21.png"></a>
+                    </div>
+                    <h2 id="anchor4">Первая помощь при возникновении боли</h2>
+                    <p></p>Если вовремя не восстановить крошащийся зуб, он рано или поздно просигнализирует о себе зубной болью. Дискомфорт начинается, когда дефект дошел до глубоких слоев — дентина и пульпы.</p>
+                    <p>Самое верное решение при зубной боли — посетить своего стоматолога. Например, клиника ДОКТОР ДЕНТ работает без выходных для вашего комфорта. Но если по каким-либо причинам показаться доктору быстро не получается, зубную боль не нужно и даже вредно терпеть. Прием болеутоляющего здесь средства вполне обоснован.</p>
+                    <p>Эффективными и наиболее безопасными считаются препараты на основе парацетамола и ибупрофена. Рассчитывается доза по принципу 10 мг на 1 кг веса. Если же в домашней аптечке их не оказалось, то можно применить кеторолак или метамизол натрия (анальгин). А вот при зубной боли у ребенка противопоказаны два последних препарата и ацетилсалициловая кислота.</p>
+                    <p>Параллельно с приемом таблеток/сиропа внутрь нужно почистить зубы и удалить изо рта все остатки пищи. Показано полоскание больного зуба раствором соды (1 чайная ложка на стакан теплой воды). Прикладывание к больному зубу трав, чеснока, обезболивающих таблеток противопоказано, так как только усугубит ситуацию.</p>
+                    <img class="article-detail__picture" src="/assets/image/news-detail.png">
+                    <h2  id="anchor5">Выводы</h2>
+                    <div class="article-detail__total">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    <ul class="article-detail__list">
+                        <li>Дефицит витаминов и микроэлементов в организме. Имеет значение недостаток кальция, фосфора, витамина Д. Этот фактор связан с нерациональным питанием либо с эндемичным районом проживания (с неадекватным содержанием минералов в почве и воде).</li>
+                        <li>Нарушение обменных процессов. При некоторых заболеваниях ЖКТ, эндокринной системы нарушается всасывание питательных веществ, тогда при нормальном поступлении минералов все равно формируется дефицит.</li>
+                        <li>Гормональные дисфункции. Зачастую страдают от хрупкости зубов женщины в менопаузе. У них снижается уровень женских гормонов, которые отвечают, в том числе, и за плотность костей.</li>
+                    </ul>
+                    <div class="article-detail__info">
+                        <div class="article-detail__date">20.06.2022</div>
+                        <a href="/experts/matveev.html" class="article-detail__author-name">Матвеев Иван Валерьевич</a>
+                    </div>
+                </article>
+
+                <aside class="sidebar">
+                    <div class="sidebar__container">
+                        <div class="sidebar__title">Содержание статьи</div>
+                        <ul class="sidebar__contents">
+                            <li><a href="#anchor1" class="js-scroll">– Причины, по которым крошатся зубы у взрослого человека</a></li>
+                            <li><a href="#anchor2" class="js-scroll">– Причины, по которым крошатся зубы у детей</a></li>
+                            <li><a href="#anchor3" class="js-scroll">– Диагностические мероприятия</a></li>
+                            <li><a href="#anchor4" class="js-scroll">– Первая помощь при возникновении боли</a></li>
+                            <li><a href="#anchor5" class="js-scroll">– Выводы</a></li>
+                        </ul>
+                        <div class="sidebar__title">Литература, используемая в статье</div>
+                        <ul class="sidebar__literature">
+                            <li>Белецкая А. А. Медицинские и социальные последствия наркомании и токсикомании//Проблемы законности. — 2013. №124.</li>
+                            <li>Луис Дж. Линг. Секреты токсикологии. Перевод с англ. под общ. ред. Е.А. Лужникова. — М.; СПб.: Бином, 2006 (ГУП ИПК Ульян. Дом печати). — 376 с.</li>
+                            <li>Клевно В. А. Экспертиза вреда здоровью: психическое расстройство, заболевание наркоманией либо токсикоманией. Научно-практическое пособие. — Москва: Норма: ИНФРА-М, 2013. — 175 с.</li>
+                        </ul>
+                        <div class="sidebar__title">Другие новости</div>
+                        <div class="sidebar__news">
+                            <article class="news__item">
+                                <img class="news__picture" src="/assets/image/news_no_img.png">
+                                <div>
+                                    <div class="news__name">Почему важно сдавать анализы перед отпуском?</div>
+                                    <div class="news__preview">Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи </div>
+                                    <div class="news__author">Автор: ГорКлиника</div>
+                                    <div class="news__bottom-wrap">
+                                        <div class="news__date">03.07.2022</div>
+                                        <a class="news__link">Читать статью</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news__item">
+                                <img class="news__picture" src="/assets/image/news_no_img.png">
+                                <div>
+                                    <div class="news__name">Почему важно сдавать анализы перед отпуском?</div>
+                                    <div class="news__preview">Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи </div>
+                                    <div class="news__author">Автор: ГорКлиника</div>
+                                    <div class="news__bottom-wrap">
+                                        <div class="news__date">03.07.2022</div>
+                                        <a class="news__link">Читать статью</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="news__item">
+                                <img class="news__picture" src="/assets/image/news_no_img.png">
+                                <div>
+                                    <div class="news__name">Почему важно сдавать анализы перед отпуском?</div>
+                                    <div class="news__preview">Краткое описание статьи Краткое описание статьи Краткое описание статьи Краткое описание статьи </div>
+                                    <div class="news__author">Автор: ГорКлиника</div>
+                                    <div class="news__bottom-wrap">
+                                        <div class="news__date">03.07.2022</div>
+                                        <a class="news__link">Читать статью</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <section class="spec-sl">
+            <div class="container">
+                <div class="title spec-sl__title">Наши специалисты</div>
+            </div>
+            <div id="spec-slider" class="spec-sl__slider owl-carousel owl-theme">
+                <div class="spec-sl__item">
+                    <a href="/experts/matveev.html" class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec1.jpg">
+                    </a>
+                    <a href="/experts/matveev.html" class="spec-sl__name">Матвеев Иван Валерьевич</a>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/experts/expert11.png">
+                    </div>
+                    <div class="spec-sl__name">Рожков Тимофей Феликсович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-хирург</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-имплантолог</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/spec/spec4.jpg">
+                        <span class="spec-sl__label">Скидка на прием -50%</span>
+                    </div>
+                    <div class="spec-sl__name">Якубовский Сергей Леонидович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/experts/expert12.png">
+                    </div>
+                    <div class="spec-sl__name">Мартиросов Грант Арамович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                    </div>
+                </div>
+                <div class="spec-sl__item">
+                    <div class="spec-sl__picture">
+                        <img src="/assets/image/experts/expert13.png">
+                    </div>
+                    <div class="spec-sl__name">Копадзе Шота Караманович</div>
+                    <div class="spec-sl__dirs">
+                        <div class="spec-sl__dir">Стоматолог-хирург</div>
+                        <div class="spec-sl__dir">Стоматолог-ортопед</div>
+                        <div class="spec-sl__dir">Стоматолог-терапевт</div>
+                        <div class="spec-sl__dir">Стоматолог-имплантолог</div>
+                    </div>
+                </div>
+
+                <div class="spec-sl__item spec-sl__item_mobile-handler"></div>
+                <div class="spec-sl__item spec-sl__item_mobile-handler"></div>
+            </div>
+            <div class="container">
+                <div class="spec-sl__control">
+                    <div class="spec-sl__nav default-slider-nav"></div>
+                    <div class="spec-sl__dots"></div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="title services__title">Наши услуги <a href="/services/">Посмотреть все услуги</a></div>
+                <div class="services__wrapper">
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service1.svg">
+                        <div class="services__name">Вызов врача на дом</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service2.svg">
+                        <div class="services__name">Анализы</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service3.svg">
+                        <div class="services__name">Неврология</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service4.svg">
+                        <div class="services__name">Гастроэтерология</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a href="/services/dent/" class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service5.svg">
+                        <div class="services__name">Стоматология</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service6.svg">
+                        <div class="services__name">Гинекология</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service7.svg">
+                        <div class="services__name">УЗИ</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service8.svg">
+                        <div class="services__name">МРТ</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service9.svg">
+                        <div class="services__name">Процедурный кабинет</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <a class="services__item">
+                        <img class="services__icon" src="/assets/image/services/service10.svg">
+                        <div class="services__name">Оториноларингология</div>
+                        <div class="services__link">Подробнее</div>
+                    </a>
+                    <div class="services__item_link">
+                        <h2>Посмотреть все услуги<br> Горклиники</h2>
+                        <a class="btn btn_fill_white btn_br-10" href="/services/">Показать все услуги</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offers">
+            <div class="container">
+                <div class="title offers__title">Специальные предложения</div>
+                <div class="offers__wrapper">
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer1.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer1.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer1-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer1-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer1-450.png">
+                        <div class="offer__title">Годовое<br> прикрепление</div>
+                        <div class="offer__subtitle">Полное медицинское<br> обслуживание</div>
+                        <a href="/attach/" class="offer__btn">Купить безлимит</a>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer2.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer2.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer2-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer2-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer2-450.png">
+                        <div class="offer__title">Процедурный<br> кабинет</div>
+                        <div class="offer__subtitle">Капельницы, уколы и другие<br> услуги в нашей клинике</div>
+                        <button class="offer__btn">Узнать подробнее</button>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer3.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer3.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer3-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer3-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer3-450.png">
+                        <div class="offer__title">Диагностика</div>
+                        <div class="offer__subtitle">МРТ, КТ, УЗИ,<br> ЭХОКГ, анализы</div>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer4.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer4.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer4-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer4-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer4-450.png">
+                        <div class="offer__title">Подарочные<br> сертификаты</div>
+                        <div class="offer__subtitle">Получите сертификат<br> на топовые услуг при<br> оформлении годового<br> прикрепления</div>
+                    </div>
+                    <div class="offer__item" style="background-image: url('/assets/image/offers/offer5.png');">
+                        <img class="offer__picture offer__picture_1024" src="/assets/image/offers/offer5-1024.png">
+                        <img class="offer__picture offer__picture_768" src="/assets/image/offers/offer5-768.png">
+                        <img class="offer__picture offer__picture_580" src="/assets/image/offers/offer5-580.png">
+                        <img class="offer__picture offer__picture_450" src="/assets/image/offers/offer5-450.png">
+                        <div class="offer__title">Медкарта</div>
+                        <div class="offer__subtitle">Единое пространство<br> для медицинских<br> данных</div>
+                        <button class="offer__btn offer__btn_beige">Войти в личный кабинет</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="attach">
+            <div class="container">
+                <div class="attach__container">
+                    <div class="attach__title title">Годовое прикрепление</div>
+                    <div class="attach__subtitle">Полное медицинское обслуживание в нашей<br> клинике на целый год</div>
+                    <div class="attach__price">15 000 рублей</div>
+                    <div class="attach__buttons">
+                        <button class="btn btn_fill_green js-open-form">Купить безлимит</button>
+                        <a href="/attach/" class="btn btn_green btn_bg_t">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="quiz">
+            <div class="container">
+                <div class="title">Остались вопросы?</div>
+                <div class="subtitle">Оставьте свои контактные данные, администраторы клиники перезвонят вам и ответят на все вопросы.</div>
+                <form id="callback-footer-form">
+                    <fieldset>
+                        <label>Ваше имя</label>
+                        <input type="text" placeholder="Введите ваше имя">
+                    </fieldset>
+                    <fieldset>
+                        <label>Контактный телефон<span>*</span></label>
+                        <input maxlength="18" type="tel" placeholder="+ 7 (___) ___-__-__">
+                    </fieldset>
+                    <input class="btn btn_fill_blue" type="submit" value="Перезвоните мне">
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <div class="overlay" id="overlay"></div>
+
+    <div class="modal" id="modal">
+        <div id="success" class="success">
+            <img src="/assets/image/success.svg">
+            <div class="success__title">Ваша заявка успешно отправлена, мы свяжемся с вами в ближайшее время!</div>
+            <button class="success__back js-close-modal">Вернуться на сайт</button>
+        </div>
+        <form id="modal-form" class="form">
+            <button class="form__close js-close-modal"></button>
+            <div class="form__title">Хотите оформить годовое прикрепление в ГорКлинике?</div>
+            <div class="form__subtitle">Мы постараемся ответить в течение дня</div>
+            <fieldset>
+                <input type="text" placeholder="Ваше имя *">
+            </fieldset>
+            <fieldset>
+                <input type="mail" placeholder="Ваш E-mail">
+            </fieldset>
+            <fieldset>
+                <input maxlength="18" type="tel" placeholder="+ 7 (___) ___-__-__ *">
+            </fieldset>
+            <div class="form__policy">Нажимая на кнопку Оставить заявку, я соглашаюсь с условиями Политики обработки персональных данных</div>
+            <input class="btn btn_fill_blue" type="submit" value="Оставить заявку">
+        </form>
+    </div>
+
+    <div id="mobile-menu" class="menu">
+        <button class="menu__close js-close-menu"><img src="/assets/image/close2.svg"></button>
+        <div class="menu__logo"><img src="/assets/image/logo.svg"></div>
+        <nav>
+            <ul>
+                <li><a href="/">Главная</a></li>
+                <li><a href="/branch/">О филиалах</a></li>
+                <li><a href="/services/">Услуги</a></li>
+                <li><a href="/experts/">Специалисты</a></li>
+                <li><a href="/share/">Акции</a></li>
+                <li><a href="/articles/">Статьи</a></li>
+                <li><a href="/news/">Новости</a></li>
+                <li><a href="/reviews/">Отзывы</a></li>
+            </ul>
+        </nav>
+        <a class="menu__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+        <div class="menu__location">
+            <h2>Адреса</h2>
+            <a href="/contacts/">Клиника в Перово: г.Москва, ул. Перовская, д. 23 (м. Перово)</a>
+            <a href="/contacts/">Клиника в Зюзино: г.Москва, Симферопольский б-р, д.10 к.1</a>
+        </div>
+        <button class="btn btn_fill_white btn_br-50 menu__lk">Войти в Личный кабинет</button>
+        <button class="btn btn_fill_green menu__record">Онлайн-запись</button>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <div>
+                        <a href="/" class="footer__logo">
+                            <img src="/assets/image/logo.svg">
+                        </a>
+                        <img class="footer__rating" src="/assets/image/rating.png">
+                    </div>
+                    <div>
+                        <div class="footer__info">Общество с ограниченной ответственностью «Городская Семейная Клиника» лицензия № ЛО-77-01-017171 от 11 декабря 2018 г. ИНН 7720691259</div>
+                        <div class="footer__social">
+                            <a href="https://vk.com/gorclinica_zuzino" target="_blank"><img src="/assets/image/social/vk.svg"></a>
+                            <a href="https://zen.yandex.ru/id/62b46299f985852025fe7723" target="_blank"><img src="/assets/image/social/tg.svg"></a>
+                            <a href="https://t.me/gorklinika_v_zuzino" target="_blank"><img src="/assets/image/social/dzen.svg"></a>
+                        </div>
+                    </div>
+                    <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="/branch/">О филиалах</a></li>
+                            <li><a href="/services/">Услуги</a></li>
+                            <li><a href="/experts/">Специалисты</a></li>
+                            <li><a href="/share/">Акции</a></li>
+                            <li><a href="/articles/">Статьи</a></li>
+                            <li><a href="/news/">Новости</a></li>
+                            <li><a href="/reviews/">Отзывы</a></li>
+                            <li><a href="/vacancies/">Вакансии</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <a href="/attach/" class="btn btn_fill_grey footer__gp">Годовое прикрепление</a>
+                    <button class="btn btn_fill_grey footer__lk">Личный кабинет</button>
+                </div>
+                <div class="footer__col">
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="/licenses/">Лицензии</a></li>
+                            <li><a>Справочник</a></li>
+                            <li><a>Контролирующие органы</a></li>
+                            <li><a href="/regulatory-acts/">Нормативные акты</a></li>
+                            <li><a>Сведения об учредителях</a></li>
+                            <li><a href="/contacts/">Контакты</a></li>
+                            <li><a>Обработка персональных данных</a></li>
+                        </ul>
+                    </nav>
+                    <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                    <a href="/attach/" class="btn btn_fill_grey footer__gp">Годовое прикрепление</a>
+                    <button class="btn btn_fill_grey footer__lk">Личный кабинет</button>
+                </div>
+                <div class="footer__col footer__contacts">
+                    <div>
+                        <div class="footer__bottom_info">Обращаем Ваше внимание, что стоимость визита к врачу не всегда совпадает с указанной ценой приёма. Окончательная стоимость приема может включать стоимость дополнительных услуг. Необходимость оказания услуг определяется врачом в зависимости от медицинских показаний непосредственно во время приёма.</div>
+                        <div class="footer__contacts__title">Контакты</div>
+                        <div class="footer__contacts__wrapper">
+                            <a class="footer__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                            <a class="footer__mail" href="mailto:info@perovo.clinic">info@perovo.clinic</a>
+                            <a class="footer__phone" href="tel:+7 (499) 460-05-07">+7 (499) 460-05-07</a>
+                            <a class="footer__mail" href="mailto:info@gorclinica-zuzino.ru">info@gorclinica-zuzino.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer__contacts__address">
+                        <div class="footer__contacts__title">Адреса</div>
+                        <a href="/contacts/" class="footer__location">Клиника в Перово: г.Москва, ул. Перовская, д. 23 (м. Перово)</a>
+                        <a href="/contacts/" class="footer__location">Клиника в Зюзино: г.Москва, Симферопольский б-р, д.10 к.1</a>
+                        <div class="footer__location">Центр томографии: г. Москва, 1-й проезд Перова поля, д. 9, стр.1</div>
+                        <a class="btn btn_fill_blue footer__download-btn">Скачать полный прайс на услуги</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__row footer__bottom">
+                <div class="footer__bottom_info">Обращаем Ваше внимание, что стоимость визита к врачу не всегда совпадает с указанной ценой приёма. Окончательная стоимость приема может включать стоимость дополнительных услуг. Необходимость оказания услуг определяется врачом в зависимости от медицинских показаний непосредственно во время приёма.</div>
+                <div class="footer__bottom_subinfo">Материалы, размещенные на данной странице, носят информационный характер и предназначены для образовательных целей. Посетители сайта не должны использовать их в качестве медицинских рекомендаций. Определение диагноза и выбор методики лечения остается исключительной прерогативой вашего лечащего врача! Мы не несём ответственности за возможные негативные последствия, возникшие в результате использования информации, размещенной на сайте perovo.clinic.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/assets/lib/owl/owl.carousel.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/assets/lib/mask/index.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
